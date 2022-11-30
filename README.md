@@ -1,2 +1,2 @@
-# baekjoon
-Solving problems in Baekjoon!
+## Baekjoon Problem Solving
+Currently solving problems in Baekjoon!
