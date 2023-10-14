@@ -58,28 +58,28 @@ public class Main {
             
             // 안 부딪힐 경우 이동
             if(map[ny][nx] ==1) {
-				map[ny][nx] = 0;
-				q.add(ny*n +nx);
-			}
+                map[ny][nx] = 0;
+                q.add(ny*n +nx);
+            }
             else {
-				q.add(ny*n +nx);
-				q.poll();
-			}
+                q.add(ny*n +nx);
+                q.poll();
+            }
             
             // 방향 전환
             if(moveInfo.containsKey(time)) {
-				String data = moveInfo.get(time);
-				if(data.equals("D")) {
-					d +=1;
-					if(d==4)  d=0;
-				}
+                String data = moveInfo.get(time);
+                if(data.equals("D")) {
+                    d +=1;
+                    if(d==4)  d=0;
+                }
                 else {
-					d -=1;
-					if(d==-1) d=3;
-				}
-			}
-			px = nx;
-			py = ny;
+                    d -=1;
+                    if(d==-1) d=3;
+                }
+            }
+            px = nx;
+            py = ny;
         }
         System.out.println(time);
     }
